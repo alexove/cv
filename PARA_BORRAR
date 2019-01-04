@@ -1,0 +1,1 @@
+rm cv.{aux,log,out,pdf,run.xml,bcf}
