@@ -1,0 +1,457 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+pdftitle={Alex Irmel Oviedo Solis -  Computer Engineer},
+pdfauthor={Ing. Alex Irmel Oviedo Solis},
+pdfsubject={Curriculum vitae},
+pdfkeywords={},
+colorlinks=false,           % no lik border color
+allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+bubble center node font = \footnotesize,
+bubble node font = \footnotesize,
+% specifies the minimum size of the bubble center node
+bubble center node size = 0.5cm,
+%  specifies the minimum size of the bubbles
+bubble node size = 0.5cm,
+% specifies which is the distance among the bubble center node and the other bubbles
+distance center/other bubbles = 0.3cm,
+% sets the distance from the text to the border of the bubble center node
+distance text center bubble = 0.5cm,
+% set center bubble color
+bubble center node color = pblue,
+% define the list of colors usable in the diagram
+set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+% sets the opacity at which the bubbles are shown
+bubble fill opacity = 0.6,
+% sets the opacity at which the bubble text is shown
+bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Alex Irmel}{Oviedo Solis}
+{Computer Engineer}
+
+% Fake text to add separator
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    \includegraphics[scale=0.18]{img/aoviedo.png}
+    \section{Direcci\'on}
+    Av. de la cultura 2505
+    Cusco, Cusco
+    ~
+    \section{Telefonos}
+    +51 930 328 402
+    ~
+    \section{Email}
+    \href{mailto:aoviedosolis@gmail.com}{\textbf{aoviedosolis@}\\gmail.com}
+    \href{mailto:alexove@fedoraproject.org}{\textbf{alexove@}\\fedoraproject.org}
+    ~
+    \section{Web \& Git}
+    \href{https://github.com/alexove}{https://github.com/alexove}
+    % ~
+    % % use  \hspace{} or \vspace{} to change bubble size, if needed
+    % \section{Cualidades Personales}
+    % \smartdiagram[bubble diagram]{
+    % \textbf{Trabajo}\\\textbf{en equipo},
+    % \textbf{Iniciativa},
+    % \textbf{Curiosidad},
+    % \textbf{Resolucion}\\\textbf{problemas},
+    % \textbf{\vspace{2mm}Gerencia\vspace{2mm}},
+    % \textbf{Organizado}
+    % }
+    ~
+    \section{Languages}
+    \textbf{Spanish}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{English}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Russian}\includegraphics[scale=0.40]{img/2stars.png}
+    ~
+\end{aside}
+~
+\section{Computer engineer}
+\emph{With a predisposition to meet goals and objectives, a proactive attitude, 
+the ability to work in multidisciplinary teams, teamwork under pressure, the 
+ability to adapt to changes, high reliability, aspiration for professional 
+development and the ability to interact with people inside and outside the 
+organization and a desire for continuous progress.}
+\\
+\section{Education}
+\begin{entrylist}
+    \entry
+    {2019 - 2021}
+    {Master in Information Security}
+    {Universidad de la Rioja - Sede Mexico}
+    {Master's degree focused on the latest protection techniques against vulnerabilities 
+     in operating systems, software, databases, web systems and all the risks inherent 
+     to the use of Information Technologies and their possible impact within the public 
+     and private organizational structure..\\}
+    \entry
+    {2016 - 2017}
+    {MBA-not graduated}
+    {Universidad Andina del Cusco}
+    {The Master's in Business Administration is a program aimed at training professionals 
+	from the Cusco Region and the country, engaging them with the reality of an environment 
+	that increasingly demands knowledge and the correct and adequate use of information, 
+	with the ability to respond with rigor, opportunity and social relevance to local, 
+	regional and national problems.\\}
+    \entry
+    {2009 - 2012}
+    {Computer Engineering Degree}
+    {Universidad Nacional de San Antonio Abad del Cusco}
+    {Honest, ethical, caring professional with a solid background in basic sciences, IT and 
+	systems. Competent in the development of IT projects, with the ability to design, 
+	manage, audit and monitor their progress.\\}
+    \entry
+    {2002 - 2009}
+    {Bachelor in Computer Engineering}
+    {Universidad Nacional de San Antonio Abad del Cusco}
+    {Honest, ethical, caring professional with a solid background in basic sciences, IT and 
+	systems. Competent in the development of IT projects, with the ability to design, 
+	manage, audit and monitor their progress.}
+\end{entrylist}
+\\
+
+\newpage
+\begin{aside}
+    ~
+    ~
+    \section{Programming Languages}
+    \includegraphics[scale=0.20]{img/java}
+    \includegraphics[scale=0.07]{img/groovy}
+    \includegraphics[scale=0.3]{img/bash}
+    ~
+    ~
+    \section{Operating Systems}
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Windows}\includegraphics[scale=0.40]{img/1stars.png}
+    ~
+    \section{Data bases}
+    ~
+    \includegraphics[scale=0.04]{img/mysql.png}
+    \includegraphics[scale=0.30]{img/mariadb.png}
+    ~
+    \section{Web development}
+    ~
+    \includegraphics[scale=0.02]{img/grails.png}
+    ~
+\end{aside}
+\section{Certifications}
+\begin{entrylist}
+    \entry
+    {04/2016}
+    {Linux Foundation Certified System Administrator LFCS}
+    {Linux Foundation}
+    {Linux Foundation certifications give you a way to differentiate yourself in
+    a job market that's hungry for your skills. We've taken a new, innovative
+    approach to Linux certification that allows you to showcase your skills in a
+     way that other sysadmins will respect and employers will trust.\\
+     \emph{Certificate ID N°{:} LFCS-1600-0744-0100}}
+\end{entrylist}
+
+\section{Work experience}
+\begin{entrylist}
+    \entry
+    {03/24 - Ahora}
+    {Data Center Manager}
+    {Cusco Regional Goverment}
+	{Performed activities: GNU/Linux servers administration(CentOS, Debian, Ubuntu), network monitoring,
+	SIAF-MEF support and maintenance, Digital Goverment and Digital Security (early stage).}
+    \entry
+    {09/23 - 02/24}
+    {BIM developer}
+    {Consorcio Rios del Norte S.A.C.}
+    {Performed activities: Planning, development of quality management systems and process automation within the BIM metodology.}
+    \entry
+    {12/22 - 08/23}
+    {Head of IT and Systems}
+    {MacSalud S.A.C.}
+    {Performed activities: Planning, develpment, resource and task allocation, coordination with information systems providers
+     network monitoring and support, data center management and Internet.}
+    \entry
+    {02/22 - 11/22}
+    {Coordinador de proyecto de software}
+    {Regional Education Management of Cusco}
+    {Performed activities: Planning, development, resource and tasks allocation,
+     implementation, monitoring and delivery of Virtual Education Platform.}
+    \entry
+    {08/21 - 09/21}
+    {Information and Apps Security Analist}
+    {Caja Municipal Cusco}
+    {Performed activities: Information security controls monitoring. information security risk analisis.}
+    \entry
+    {03/21 - 07/21}
+    {Data Center Manager}
+    {Cusco Regional Goverment}
+	{Performed activities: GNU/Linux servers management (CentOS, Debian, Ubuntu), network monitoring and support, SIAF-MEF 
+	and SIGA-MEF support and maintenance.\\}
+    \entry
+    {01/20 - 03/21}
+    {Head of IT and Systems}
+    {Cusco Regional Goverment}
+    {Performed activities: Software project coordination, network monitoring and support, data center monitoring and support,
+	Digital Goverment.\\}
+    \entry
+    {01/18 - 12/19}
+    {Data center Manager}
+    {Cusco Regional Goverment}
+    {Performed activities: GNU/Linux servers management (CentOS, Debian, Ubuntu), network monitoring and support, SIAF-MEF 
+	and SIGA-MEF support and maintenance.\\}
+    \entry
+    {02/17 - 06/17}
+    {GIS developer}
+    {CEC Guaman Poma de Ayala}
+    {GIS developer with java, gvSIG and PostgreSQL.\\}
+\end{entrylist}
+\begin{entrylist}
+    \entry
+    {04/16 - 07/16}
+    {Data center Manager}
+    {Cusco Regional Goverment}
+    {Performed activities: GNU/Linux servers management (CentOS, Debian, Ubuntu), network monitoring and support, SIAF-MEF 
+	and SIGA-MEF support and maintenance.\\}
+    \entry
+    {02/16 - 03/16}
+    {Microsoft Office Teacher}
+    {CENFOTI – Universidad Andina del Cusco.}
+    {Performed activities: Microsoft Office Teacher.\\}
+    \entry
+    {07/15 - 12/15}
+    {Data center Manager}
+    {Cusco Regional Goverment}
+    {Performed activities: GNU/Linux servers management (CentOS, Debian, Ubuntu), network monitoring and support, SIAF-MEF 
+	and SIGA-MEF support and maintenance.\\}
+    \entry
+    {01/15 - 03/15}
+    {Data center Manager}
+    {Cusco Regional Goverment}
+    {Performed activities: GNU/Linux servers management (CentOS, Debian, Ubuntu), network monitoring and support, SIAF-MEF 
+	and SIGA-MEF support and maintenance.\\}
+    \entry
+    {06/14 - 10/14}
+    {Software Developer}
+    {Las Bambas - ManPower}
+	{Software Developer for cooper mining operations (drilling and blasting).\\}
+    \entry
+    {07/12 - 02/14}
+    {Java web developer}
+    {Java For Smart Information Technologies - Cusco}
+    {Java web developer, JSP and basic GWT, Android development, GRAILS Framework, VPS management.\\}
+    \entry
+    {11/12 - 01/13}
+    {Data Center associate}
+    {{RootWay Internet Services \& Consulting - Uruguay}}
+    {{Administraci\'on y migraci\'on de servidores virtuales, GNU/Linux en AmazonWS. \\ }}
+    \entry
+    {01/12 - 05/12}
+    {Jefe de la Oficina de Inform\'atica.}
+    {Municipalidad Provincial de Quispicanchi}
+    {Jefe de la Oficina de Inform\'atica.\\}
+\end{entrylist}
+\begin{aside}
+    ~
+    \section{GNU/Linux}
+    ~
+    \includegraphics[scale=0.12]{img/fedora}
+    \includegraphics[scale=0.12]{img/centos}
+    ~
+\end{aside}
+\section {Diplomados}
+\begin{entrylist}
+  \entry
+  {10/2020 - 03/2021}
+  {Gestión de la Seguridad y Marco Legal}
+  {Universidad Internacional de la Riona en México}
+  {Realizado del 26 de octubre de 2020 al 7 de marzo de 2021, con una duración de 432 horas}
+  \entry
+  {05/2020 - 08/2020}
+  {Seguridad en los Nuevos Entornos y Auditoría}
+  {Universidad Internacional de la Riona en México}
+  {Realizado del 4 de mayo de 2020 al 30 de agosto de 2020, con una duración de 360 horas}
+  \entry
+  {10/2019 - 03/2020}
+  {Seguridad en Redes, Sistemas y Aplicaciones}
+  {Universidad Internacional de la Riona en México}
+  {Realizado del 28 de octubre de 2019 al 8 de marzo de 2020, con una duración de 360 horas}
+\end{entrylist}
+\newpage
+\section{Cursos y seminarios}
+\begin{entrylist}
+    \entry
+    {08/23 - 08/23}
+    {Habilidades Gerenciales para el Pequeño Empresario}
+    {UDEMY}
+    {Curso dictado por Tomas Bradanovic durante 2 horas lectivas.\\}
+    \entry
+    {01/23 - 01/23}
+    {Asterisk nativo, configura tu Central Telefonica desde cero}
+    {UDEMY}
+    {Curso dictado por Roger Mamani durante 11 horas lectivas.\\}
+    \entry
+    {01/23 - 01/23}
+    {Gestión de riesgos ISO/IEC 27005, con formatos editables}
+    {UDEMY}
+    {Curso dictado por Israel Rogelio Gomez durante 2 horas lectivas.\\}
+    \entry
+    {01/23 - 01/23}
+    {ISO/IEC 27001 Implementando Seguridad de la Información}
+    {UDEMY}
+    {Curso dictado por Grover Vasquez durante 2 horas lectivas.\\}
+    \entry
+    {11/21 - 11/21}
+    {Diseño y construcción de redes de fibra optica}
+    {UDEMY}
+    {Curso ofrecido por Gaston Fenske durante 2.5 horas lectivas.\\}
+    \entry
+    {08/21 - 08/21}
+    {Analisis de Vulnerabilidades Digitales}
+    {Centro Nacional de Seguridad Digital}
+    {Curso ofrecido por el Centro Nacional de Seguridad Digital (PCM-SEGDI) durante 24 horas lectivas.\\}
+    \entry
+    {06/21 - 06/21}
+    {Auditor Interno ISO 27001}
+    {Centro Nacional de Seguridad Digital}
+    {Curso ofrecido por el Centro Nacional de Seguridad Digital (PCM-SEGDI) durante 24 horas lectivas.\\}
+    \entry
+    {05/21 - 05/21}
+    {Linux Essentials}
+    {Centro Nacional de Seguridad Digital}
+    {Curso ofrecido por el Centro Nacional de Seguridad Digital (PCM-SEGDI) durante 24 horas lectivas.\\}
+    \entry
+    {04/21 - 04/21}
+    {SCRUM Práctico en Proyectos de Software}
+    {UDEMY}
+    {Curso dictado por Hector Bravo durante 4.5 horas lectivas.\\}
+    \entry
+    {10/18 - 10/18}
+    {Curso PRE-MTCNA Mikrotik}
+    {COMUTEL}
+    {Curso dictado por COMUTEL durante 16 horas lectivas.\\}
+    \entry
+    {12/15 - 01/16}
+    {Curso OFICIAL ITIL FOUNDATION}
+    {BSGrupo}
+    {Realizado entre el 06 de diciembre del 2015 y el 06 de enero del 2016.\\}
+\end{entrylist}
+
+\section{Congresos y ponencias}
+\begin{entrylist}
+  \entry
+    {11/2016}
+    {\textbf{Ponente} VI Encuentro de Ing. de Sistemas e Inform\'atica }
+    {UTEA}
+    {Realizado del 16 al 18 de noviembre del 2015 en la Universidad Tecnológica de los Andes - Sede Cusco.\\}
+\end{entrylist}
+\begin{entrylist}
+    \entry
+    {09/2015}
+    {\textbf{Ponente} Fedora Users and Developers Conference - Argentina}
+    {Fedora Community}
+    {Realizando en la ciudad de Cordoba-Argentina, entre 10 y 12 de septiembre
+    del 2015 en la Universidad Nacional de C\'ordoba – Argentina.\\}
+    \entry
+    {08/2015}
+    {\textbf{Ponente} {XXIII CONEISC}}
+    {Universidad Catolica Santa Maria}
+    {Realizado entre el 17 al 21 de agosto del 2015 en la Universidad Catolica Santa Maria, Arequipa, Peru.\\}
+    \entry
+    {11/2014}
+    {\textbf{Ponente} VI Festival Internacional de Software Libre SOFLISEOANE}
+    {Instituto de Educaci\'on Superior Tecnol\'ogico Publico Manuel Seoane Corrales}
+    {Realizado el 28 y 29 de noviembre del 2014 en el Instituto de Educaci\'on Superior
+    Tecnol\'ogico Publico Manuel Seoane Corrales, Lima.\\}
+    \entry
+    {04/2014}
+    {\textbf{Ponente} 15-vo Foro Internacional do Software Livre-Porto Alegre-Brasil}
+    {FISL}
+    {Realizado entre el 7 y 10 de mayo del 2014 en la ciudad de Porto Alegre-Brasil.\\}
+    \entry
+    {01/14 - 03/14}
+    {Curso Taller de "SEGURIDAD INFORM\'ATICA"}
+    {Grupo Development In Peru SCRL}
+    {Organizado por el Grupo Development In Peru SCRL.\\}
+    \entry
+    {12/2015}
+    {\textbf{Ponente} Semana Informatica INSANE CODE}
+    {IST Tupac Amaru}
+    {Organizado por el Instituto de Educaci\'on Superior Tecnol\'ogico Publico "Tupac
+    Amaru" del Cusco.}
+\end{entrylist}
+\begin{entrylist}
+    \entry
+    {10-2013}
+    {\textbf{Ponente} IV ENCUENTRO DE INGENIERIA DE SISTEMAS E INFORMATICA}
+    {UTEA}
+    {Realizado los d\'ias 26 y 27 de octubre del 2013 organizado por la Universidad
+    Tecnol\'ogica de los Andes.\\}
+    \entry
+    {01/13 - 03/13}
+    {Curso ANDROID{:} PROGRAMACI\'ON DE APLICACIONES}
+    {UPV}
+    {Realizado del 10 de enero del 2013 hasta el 30 de marzo del 2013, dado por
+    la Universidad Polit\'ecnica de Valencia-Espa\~na.}
+    \entry
+    {09-2012}
+    {Encuentro GOOGLE DEVELOPMENT FEST LIMA}
+    {Google Developers Group}
+    {Realizado el 27 y 28 de octubre del 2012 y organizado por Google Developer Group Lima.},
+    \entry
+    {08-2012}
+    {Seminario Taller de Regional ESTRATEGIA NACIONAL DE GOBIERNO ELECTRONICO}
+    {ONGEI}
+    {Realizado el 13 y 14 de septiembre del 2012, organizado por la Oficina
+    Nacional de Gobierno Electr\'onico e Inform\'atica.}
+\end{entrylist}
+\section{Otras actividades}
+\begin{entrylist}
+    \entry
+    {08-2013}
+    {Organizador de FUDCon Cusco 2013}
+    {Fedora Communitty, UNSAAC}
+    {Fedora Users and Developers Conference Latin América Cusco 2013, organizado
+    por la comunidad Fedora Perú, Universidad Nacional de San Antonio Abad del
+    Cusco y Municipalidad Provincial del Cusco, realizado el 26,27 y 28 de
+    septiembre del 2013.}
+    \entry
+    {03/13 - ahora}
+    {Embajador Fedora}
+    {Fedora Community}
+    {Ambassadors are the representatives of Fedora. Ambassadors ensure the public
+    understand Fedora's principles and the work that Fedora is doing. Additionally
+    Ambassadors are responsible for helping to grow the contributor base, and to
+    act as a liaison between other FLOSS projects and the Fedora community. }
+\end{entrylist}
+%
+%\begin{flushleft}
+%    \emph{May 8th, 2016}
+%\end{flushleft}
+%\begin{flushright}
+%    \emph{John Snow}
+%\end{flushright}
+
+\end{document}
